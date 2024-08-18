@@ -11,11 +11,14 @@
   margin: 0 auto;
   max-width: 1100px;
   max-height: 30px;
+  padding: 0 2% ;
+
 }
 .header {  
  height: 40px;
   background-color: white;
   border-bottom: 2px solid rgb(200,200,200);
+  height: 50px;
 
 }
 .header__logo{
@@ -33,6 +36,9 @@
 .header__loginForm{
   width: 50%;
   text-align: right;
+}
+.header__loginForm form{
+  display: inline-block;
 }
 .header__loginForm input[type=text],
 .header__loginForm input[type=password]{
@@ -52,4 +58,26 @@
   cursor: pointer;
   font-size: 14px;
   border-radius: 5px;
+}
+.btn_criarConta{
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 10px;
+}
+.header__logadoInfo{
+  text-align: right;
+  width: 50%;
+  
+}
+.header__logadoInfo a{
+  margin: 0 10px;
+  background-color: #0095f6;
+  color: white;
+  border: 0;
+  text-decoration: none;
+  padding: 3px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+
 }
