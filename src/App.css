@@ -125,13 +125,8 @@
   line-height: 30px;
   height: 30px;
   border-radius: 15px;
-  background-color: #0095f6;
- 
-
-
+  background-color: #0095f6; 
 }
-
-
 
 .modalUpload{
   display: none;
@@ -177,7 +172,5 @@
   height: 30px;
   border-radius: 15px;
   background-color: #0095f6;
- 
-
 
 }

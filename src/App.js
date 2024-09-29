@@ -1,5 +1,6 @@
 import './App.css';
-import { db } from './firebase';
+import './firebase.js';
+import { db } from './firebase'; 
 import { useEffect, useState } from 'react';
 import Header from './Header';
 
@@ -8,12 +9,18 @@ import Header from './Header';
 
 function App() {
 
-  const [user, setUser] = useState(null);  
+  const [user, setUser] = useState();  
+
+   const [posts,setPosts] = useState([]);
 
   useEffect(() => {
 
+    db.collection('posts').orderBy('timestamp','desc').onSnapshot(function(snapshot){
 
-  }, [])
+
+    })
+
+  },[])
 
   return (
     <div className="App">
